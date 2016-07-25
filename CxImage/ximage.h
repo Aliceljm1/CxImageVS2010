@@ -243,6 +243,8 @@ public:
 	DWORD	GetType() const;
 	const char*	GetLastError();
 	static const TCHAR* GetVersion();
+	static const char* ljminfo();
+	static void ljminfo2();
 	static const float GetVersionNumber();
 
 	DWORD	GetFrameDelay() const;

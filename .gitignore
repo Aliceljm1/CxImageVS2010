@@ -77,6 +77,8 @@ publish
 [Bb]in
 [Oo]bj
 sql
+*.log
+*.tlog
 TestResults
 *.Cache
 ClientBin
