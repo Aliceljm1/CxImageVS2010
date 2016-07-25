@@ -7,7 +7,7 @@
 int _tmain(int argc, _TCHAR* argv[])
 {
 	//CxImage::ljminfo2();
-	_ftprintf(stderr, CxImage::ljminfo());
+	_ftprintf(stderr, CxImage::GetVersion());
 	printf("aaaa%d",1);
 	getchar();
 	return 0;

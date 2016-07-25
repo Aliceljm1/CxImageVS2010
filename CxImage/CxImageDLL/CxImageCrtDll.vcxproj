@@ -156,7 +156,7 @@
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>.\Debug\</OutDir>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>.\Debug\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
@@ -166,7 +166,7 @@
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>.\Release\</OutDir>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>.\Release\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
@@ -389,9 +389,9 @@
       <LinkDLL>true</LinkDLL>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <OutputFile>../../bin/cximagecrtd.dll</OutputFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <ImportLibrary>.\Debug\cximagecrtd.lib</ImportLibrary>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)$(Platform)\$(Configuration)\Jpeg.lib;$(SolutionDir)$(Platform)\$(Configuration)\Tiff.lib;$(SolutionDir)$(Platform)\$(Configuration)\cximage.lib;$(SolutionDir)$(Platform)\$(Configuration)\jasper.lib;$(SolutionDir)$(Platform)\$(Configuration)\jbig.lib;$(SolutionDir)$(Platform)\$(Configuration)\libdcr.lib;$(SolutionDir)$(Platform)\$(Configuration)\mng.lib;$(SolutionDir)$(Platform)\$(Configuration)\png.lib;$(SolutionDir)$(Platform)\$(Configuration)\zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -474,9 +474,9 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <LinkDLL>true</LinkDLL>
       <SubSystem>Console</SubSystem>
-      <OutputFile>../../bin/cximagecrt.dll</OutputFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <ImportLibrary>.\Release\cximagecrt.lib</ImportLibrary>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)$(Platform)\$(Configuration)\Jpeg.lib;$(SolutionDir)$(Platform)\$(Configuration)\Tiff.lib;$(SolutionDir)$(Platform)\$(Configuration)\cximage.lib;$(SolutionDir)$(Platform)\$(Configuration)\jasper.lib;$(SolutionDir)$(Platform)\$(Configuration)\jbig.lib;$(SolutionDir)$(Platform)\$(Configuration)\libdcr.lib;$(SolutionDir)$(Platform)\$(Configuration)\mng.lib;$(SolutionDir)$(Platform)\$(Configuration)\png.lib;$(SolutionDir)$(Platform)\$(Configuration)\zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -954,17 +954,6 @@
     <ClInclude Include="..\ximawmf.h" />
     <ClInclude Include="..\xiofile.h" />
     <ClInclude Include="..\xmemfile.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="..\..\x64\Debug\cximage.lib" />
-    <Library Include="..\..\x64\Debug\jasper.lib" />
-    <Library Include="..\..\x64\Debug\jbig.lib" />
-    <Library Include="..\..\x64\Debug\Jpeg.lib" />
-    <Library Include="..\..\x64\Debug\libdcr.lib" />
-    <Library Include="..\..\x64\Debug\mng.lib" />
-    <Library Include="..\..\x64\Debug\png.lib" />
-    <Library Include="..\..\x64\Debug\Tiff.lib" />
-    <Library Include="..\..\x64\Debug\zlib.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

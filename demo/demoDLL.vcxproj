@@ -137,7 +137,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>.\DebugDll\</OutDir>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>.\DebugDll\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
@@ -157,7 +157,7 @@
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>.\ReleaseDll\</OutDir>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>.\ReleaseDll\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>

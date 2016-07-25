@@ -188,33 +188,4 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-    <Library Include="..\..\x64\Debug\zlib.lib">
-      <Filter>libs</Filter>
-    </Library>
-    <Library Include="..\..\x64\Debug\Tiff.lib">
-      <Filter>libs</Filter>
-    </Library>
-    <Library Include="..\..\x64\Debug\png.lib">
-      <Filter>libs</Filter>
-    </Library>
-    <Library Include="..\..\x64\Debug\mng.lib">
-      <Filter>libs</Filter>
-    </Library>
-    <Library Include="..\..\x64\Debug\libdcr.lib">
-      <Filter>libs</Filter>
-    </Library>
-    <Library Include="..\..\x64\Debug\Jpeg.lib">
-      <Filter>libs</Filter>
-    </Library>
-    <Library Include="..\..\x64\Debug\jbig.lib">
-      <Filter>libs</Filter>
-    </Library>
-    <Library Include="..\..\x64\Debug\jasper.lib">
-      <Filter>libs</Filter>
-    </Library>
-    <Library Include="..\..\x64\Debug\cximage.lib">
-      <Filter>libs</Filter>
-    </Library>
-  </ItemGroup>
 </Project>
