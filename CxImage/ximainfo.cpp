@@ -915,10 +915,6 @@ const TCHAR* CxImage::GetVersion()
 	return (CxImageVersion);
 }
 
-const char* CxImage::ljminfo(){
-return _T("DDD");
-}
-
 void CxImage::ljminfo2(){
   int a=1;
   int b=a+2;
